@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import DataFetcher from './DataFetcher';
 
 const Home = () => {
@@ -6,6 +7,9 @@ const Home = () => {
     <div>
       <h1>Home Page</h1>
       <DataFetcher />
+      <Link to="/about">
+        <button>Go to About Page</button>
+      </Link>
     </div>
   );
 };
